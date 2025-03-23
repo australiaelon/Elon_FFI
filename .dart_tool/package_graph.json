@@ -5,10 +5,11 @@
   "packages": [
     {
       "name": "elon_ffi",
-      "version": "0.0.2",
+      "version": "0.0.3",
       "dependencies": [
         "logging",
         "native_assets_cli",
+        "native_toolchain_c",
         "path"
       ],
       "devDependencies": [
@@ -79,6 +80,17 @@
       "name": "ffi",
       "version": "2.1.4",
       "dependencies": []
+    },
+    {
+      "name": "native_toolchain_c",
+      "version": "0.9.0",
+      "dependencies": [
+        "glob",
+        "logging",
+        "meta",
+        "native_assets_cli",
+        "pub_semver"
+      ]
     },
     {
       "name": "native_assets_cli",

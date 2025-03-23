@@ -209,6 +209,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.12.0"
+  native_toolchain_c:
+    dependency: "direct main"
+    description:
+      name: native_toolchain_c
+      sha256: "60ecdc23618009379eb8d6c5971084e68b180eb69780b10034215f0f0eeff00a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.9.0"
   node_preamble:
     dependency: transitive
     description:
