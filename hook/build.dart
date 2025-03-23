@@ -16,18 +16,18 @@ LinkMode getLinkMode(LinkModePreference preference) {
 void main(List<String> args) async {
   await build(args, (input, output) async {
     final os = input.config.code.targetOS;
+    final arch = input.config.code.targetArchitecture;
     final linkMode = getLinkMode(input.config.code.linkModePreference);
 
     final libraryFileName = os.libraryFileName(input.packageName, linkMode);
     final libUri = input.outputDirectory.resolve(libraryFileName);
 
-    final prebuiltPath = 'native/macos/$libraryFileName';
+    final prebuiltPath = 'native/$os/$arch/$libraryFileName';
     final prebuiltLibUri = input.packageRoot.resolve(prebuiltPath);
 
     await Directory.fromUri(input.outputDirectory).create(recursive: true);
     await File.fromUri(prebuiltLibUri).copy(libUri.toFilePath());
 
-    // output.addDependencies([assetSourcePath]);
     output.assets.code.add(
       CodeAsset(
         package: input.packageName,
