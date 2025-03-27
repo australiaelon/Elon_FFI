@@ -335,13 +335,13 @@
       "name": "elon_ffi",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.8"
+      "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-03-23T10:05:38.378366Z",
+  "generated": "2025-03-27T16:38:27.514006Z",
   "generator": "pub",
-  "generatorVersion": "3.8.0-219.0.dev",
+  "generatorVersion": "3.8.0-226.0.dev",
   "flutterRoot": "file:///opt/flutter",
-  "flutterVersion": "3.31.0-1.0.pre.186",
+  "flutterVersion": "3.31.0-1.0.pre.260",
   "pubCache": "file:///Users/zeewayne/.pub-cache"
 }

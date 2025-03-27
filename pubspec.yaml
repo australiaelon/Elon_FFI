@@ -1,10 +1,11 @@
 name: elon_ffi
 description: "A new Dart FFI package project."
-version: 0.0.4
+version: 0.0.6
 homepage:
 
 environment:
-  sdk: ^3.8.0-219.0.dev
+  sdk: ">=3.7.2 <4.0.0"
+  flutter: 3.29.2
 
 dependencies:
   logging: ^1.3.0
